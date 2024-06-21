@@ -4,12 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,md}\"",
+    "lint:next-app": "pnpm --filter 'apps/next-app' run lint",
+    "lint:remix-app": "pnpm --filter 'apps/remix-app2' run lint",
+    "lint:components": "pnpm --filter 'packages/components' run lint",
+    "lint": "pnpm run -r lint",
+    "lint-staged": "pnpm lint && pnpm prettier"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5"
   },
   "dependencies": {
