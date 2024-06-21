@@ -12,32 +12,28 @@ export const Footer = () => {
             <li>
               <Link
                 href="/about"
-                className="text-gray-300 hover:text-white transition-colors duration-300"
-              >
+                className="text-gray-300 hover:text-white transition-colors duration-300">
                 About
               </Link>
             </li>
             <li>
               <Link
                 href="/services"
-                className="text-gray-300 hover:text-white transition-colors duration-300"
-              >
+                className="text-gray-300 hover:text-white transition-colors duration-300">
                 Services
               </Link>
             </li>
             <li>
               <Link
                 href="/portfolio"
-                className="text-gray-300 hover:text-white transition-colors duration-300"
-              >
+                className="text-gray-300 hover:text-white transition-colors duration-300">
                 Portfolio
               </Link>
             </li>
             <li>
               <Link
                 href="/contact"
-                className="text-gray-300 hover:text-white transition-colors duration-300"
-              >
+                className="text-gray-300 hover:text-white transition-colors duration-300">
                 Contact
               </Link>
             </li>
@@ -47,4 +43,3 @@ export const Footer = () => {
     </footer>
   );
 };
-

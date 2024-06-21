@@ -15,14 +15,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  console.error("------ RootLayout render!!")
+  console.error('------ RootLayout render!!');
   return (
     <html lang="en">
-    <body className={`${inter.className} min-h-screen flex flex-col`}>
-    <MainHeader />
-    <main className="flex-grow">{children}</main>
-    <Footer />
-    </body>
+      <body className={`${inter.className} min-h-screen flex flex-col`}>
+        <MainHeader />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
